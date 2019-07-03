@@ -1,0 +1,8 @@
+S A B D
+a b c d e
+4
+S->a A B
+D->c D c | d
+A->a A | a | eps
+B->b
+S

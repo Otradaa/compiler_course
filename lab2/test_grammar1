@@ -1,0 +1,10 @@
+S A B C D F G
+a b c
+6
+S->a A B
+A->a A | b B
+B->A C b | b
+C->A | b A | c C | D
+D->a | c | F b
+F->B C | A C
+S

@@ -1,0 +1,43 @@
+digraph finite_state_machine {
+	operator_0 [label=operator]
+	operator_0 -> a_1
+	a_1 [label=a]
+	operator_0 -> "=_1"
+	"=_1" [label="="]
+	operator_0 -> expression_1
+	expression_1 [label=expression]
+	expression_1 -> "logic expression_2"
+	"logic expression_2" [label="logic expression"]
+	"logic expression_2" -> "logic monomial_3"
+	"logic monomial_3" [label="logic monomial"]
+	"logic monomial_3" -> "second logic expression_4"
+	"second logic expression_4" [label="second logic expression"]
+	"second logic expression_4" -> "first logic expression_5"
+	"first logic expression_5" [label="first logic expression"]
+	"first logic expression_5" -> true_6
+	true_6 [label=true]
+	"logic expression_2" -> "logic expression 1_3"
+	"logic expression 1_3" [label="logic expression 1"]
+	"logic expression 1_3" -> "!_4"
+	"!_4" [label="!"]
+	"logic expression 1_3" -> "logic monomial_4"
+	"logic monomial_4" [label="logic monomial"]
+	"logic monomial_4" -> "second logic expression_5"
+	"second logic expression_5" [label="second logic expression"]
+	"second logic expression_5" -> "~_6"
+	"~_6" [label="~"]
+	"second logic expression_5" -> "first logic expression_6"
+	"first logic expression_6" [label="first logic expression"]
+	"first logic expression_6" -> false_7
+	false_7 [label=false]
+	"logic monomial_4" -> "logic monomial 1_5"
+	"logic monomial 1_5" [label="logic monomial 1"]
+	"logic monomial 1_5" -> "&_6"
+	"&_6" [label="&"]
+	"logic monomial 1_5" -> "second logic expression_6"
+	"second logic expression_6" [label="second logic expression"]
+	"second logic expression_6" -> "first logic expression_7"
+	"first logic expression_7" [label="first logic expression"]
+	"first logic expression_7" -> a_8
+	a_8 [label=a]
+}

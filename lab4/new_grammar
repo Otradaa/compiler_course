@@ -1,0 +1,10 @@
+S
+! & ~ a true false
+6
+S->S ! S
+S->S & S
+S->~ S
+S->a
+S->true
+S->false
+S

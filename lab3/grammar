@@ -1,0 +1,16 @@
+expression logic_expression logic_monomial second_logic_expression first_logic_expression logic_value operator
+true false & ~ ! a =
+12
+expression->logic_expression
+logic_expression->logic_monomial
+logic_expression->logic_expression ! logic_monomial
+logic_monomial->second_logic_expression
+logic_monomial->logic_monomial & second_logic_expression
+second_logic_expression->first_logic_expression
+second_logic_expression->~ first_logic_expression
+first_logic_expression->logic_value
+first_logic_expression->a
+logic_value->true
+logic_value->false
+operator->a = expression
+operator

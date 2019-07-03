@@ -1,0 +1,25 @@
+digraph finite_state_machine {
+	"S 5_0" [label="S 5"]
+	"S 5_0" -> "S 3_1"
+	"S 3_1" [label="S 3"]
+	"S 3_1" -> "S 0_2"
+	"S 0_2" [label="S 0"]
+	"S 0_2" -> true_3
+	true_3 [label=true]
+	"S 3_1" -> "!_2"
+	"!_2" [label="!"]
+	"S 3_1" -> "S 2_2"
+	"S 2_2" [label="S 2"]
+	"S 2_2" -> "~_3"
+	"~_3" [label="~"]
+	"S 2_2" -> "S 1_3"
+	"S 1_3" [label="S 1"]
+	"S 1_3" -> false_4
+	false_4 [label=false]
+	"S 5_0" -> "&_1"
+	"&_1" [label="&"]
+	"S 5_0" -> "S 4_1"
+	"S 4_1" [label="S 4"]
+	"S 4_1" -> a_2
+	a_2 [label=a]
+}

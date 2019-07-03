@@ -1,0 +1,14 @@
+E T F E1 T1
+a * + ( )
+10
+E->T
+T->F
+F->( E )
+F->a
+E->T E1
+E1->+ T E1
+E1->+ T
+T->F T1
+T1->* F T1
+T1->* F
+E
